@@ -121,33 +121,42 @@ export default {
       }
 
       // 验证 URL 安全性 (通过 Cloudflare Family DNS)
-      // 我们通过 DoH (DNS over HTTPS) 查询域名
-      // 如果域名被 Cloudflare Family DNS (1.1.1.3) 拦截（通常解析为 0.0.0.0 或 ::），则说明是不安全/成人内容
-      try {
-          const hostname = parsedUrl.hostname;
-          // 排除 IP 地址 (简单的正则，非严谨)
-          const isIp = /^(\d{1,3}\.){3}\d{1,3}$/.test(hostname) || hostname.includes(':');
-          
-          if (!isIp) {
-               const dohUrl = `https://1.1.1.3/dns-query?name=${encodeURIComponent(hostname)}&type=A`;
-               const dohResp = await fetch(dohUrl, {
-                   headers: { "Accept": "application/dns-json" }
-               });
-               
-               if (dohResp.ok) {
-                  const dnsData = await dohResp.json();
-                  // 检查 Answer
-                  if (dnsData.Answer) {
-                      for (const answer of dnsData.Answer) {
-                          // Cloudflare Family DNS 拦截的域名通常解析到 0.0.0.0 或 ::
-                          if (answer.data === "0.0.0.0" || answer.data === "::") {
-                              return Response.json({ error: "URL blocked by Cloudflare Family DNS (Malware/Adult Content)" }, { 
-                                  status: 400,
-                                  headers: { "Access-Control-Allow-Origin": "*" }
-                              });
-                          }
-                      }
-                  } else {
+       // 我们通过 DoH (DNS over HTTPS) 查询域名
+       // 如果域名被 Cloudflare Family DNS (1.1.1.3) 拦截（通常解析为 0.0.0.0 或 ::），则说明是不安全/成人内容
+       try {
+           const parsedUrlForDns = new URL(url);
+           const hostname = parsedUrlForDns.hostname;
+           // 排除 IP 地址 (简单的正则，非严谨)
+           const isIp = /^(\d{1,3}\.){3}\d{1,3}$/.test(hostname) || hostname.includes(':');
+           
+           if (!isIp) {
+               // 使用域名 endpoint，避免 IP 证书验证问题
+                const dohUrl = `https://family.cloudflare-dns.com/dns-query?name=${encodeURIComponent(hostname)}&type=A`;
+                console.log("DoH Request:", dohUrl);
+                
+                const dohResp = await fetch(dohUrl, {
+                    headers: { "Accept": "application/dns-json" }
+                });
+                
+                console.log("DoH Status:", dohResp.status);
+                
+                if (dohResp.ok) {
+                   const dnsData = await dohResp.json();
+                   console.log("DoH Response Body:", JSON.stringify(dnsData));
+                   
+                   // 检查 Answer
+                   if (dnsData.Answer) {
+                       for (const answer of dnsData.Answer) {
+                           // Cloudflare Family DNS 拦截的域名通常解析到 0.0.0.0 或 ::
+                           if (answer.data === "0.0.0.0" || answer.data === "::") {
+                               const reason = dnsData.Comment ? dnsData.Comment.join(", ") : "Malware/Adult Content";
+                               return Response.json({ error: `URL blocked by Cloudflare Family DNS: ${reason}` }, { 
+                                   status: 400,
+                                   headers: { "Access-Control-Allow-Origin": "*" }
+                               });
+                           }
+                       }
+                   } else {
                       // 如果没有 Answer (NXDOMAIN 等)，可能域名不存在
                       // 但 DoH 有时对 CNAME 处理不同，这里我们主要关注拦截
                       // 如果用户输入了不存在的域名，虽然不能访问，但不算安全风险
@@ -155,10 +164,14 @@ export default {
               }
           }
       } catch (e) {
-          console.error("DNS Safety Check Error:", e);
-          // 如果 DNS 检查失败，暂时放行，或者选择拒绝 (取决于安全策略)
-          // 这里选择放行，避免因 DoH 服务抖动影响业务
-      }
+           console.error("DNS Safety Check Error:", e);
+           // 调试模式：如果 DNS 检查出错，返回错误信息而不是静默放行
+           // 生产环境通常选择 fail-open (放行) 以保证可用性，但为了排查问题，这里改为 fail-closed
+           return Response.json({ error: "Security check failed: Unable to verify URL safety (" + e.message + ")" }, { 
+               status: 500,
+               headers: { "Access-Control-Allow-Origin": "*" }
+           });
+       }
 
       if (!expired_at || typeof expired_at !== "number") {
         return Response.json({ error: "Invalid expiration timestamp" }, { 
