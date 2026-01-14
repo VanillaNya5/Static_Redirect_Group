@@ -1186,5 +1186,9 @@ window.RULES_INTERMEDIATE = {
     "/11212": {
         "url": "http://www.baidu.com",
         "expired_at": "2026-01-14T16:59:00.000Z"
+    },
+    "/7423947238": {
+        "url": "https://blog.acofork.com",
+        "expired_at": "2026-01-14T19:10:00.000Z"
     }
 };
