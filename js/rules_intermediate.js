@@ -1203,18 +1203,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/1232341231": {
-        "url": "https://baidu.com",
-        "expired_at": "2026-01-14T14:04:00.000Z"
-    },
-    "/1234566767": {
-        "url": "https://example.com",
-        "expired_at": "2026-01-14T14:13:00.000Z"
-    },
-    "/123123123": {
-        "url": "https://example.com",
-        "expired_at": "2026-01-14T14:38:00.000Z"
-    },
     "/1231231231": {
         "url": "https://example.com",
         "expired_at": "2026-01-14T16:38:00.000Z"
