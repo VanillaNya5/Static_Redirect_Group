@@ -17,6 +17,35 @@ export default {
       return new Response("Method not allowed", { status: 405 });
     }
 
+    // CSRF 保护: 检查 Origin/Referer
+    const origin = request.headers.get("Origin");
+    const referer = request.headers.get("Referer");
+    const baseDomain = env.BASE_DOMAIN; // 必须配置 BASE_DOMAIN 才能启用此检查
+
+    if (baseDomain) {
+        // 允许 localhost 用于调试
+        const isLocalhost = origin && (origin.includes("localhost") || origin.includes("127.0.0.1"));
+        
+        if (!isLocalhost) {
+            let valid = false;
+            // 检查 Origin
+            if (origin && origin.includes(baseDomain)) {
+                valid = true;
+            }
+            // 如果没有 Origin (某些浏览器/场景)，检查 Referer
+            else if (!origin && referer && referer.includes(baseDomain)) {
+                valid = true;
+            }
+
+            if (!valid) {
+                 return Response.json({ error: "CSRF check failed: Invalid Origin/Referer" }, { 
+                    status: 403,
+                    headers: { "Access-Control-Allow-Origin": "*" }
+                });
+            }
+        }
+    }
+
     try {
       let pathname, url, expired_at;
       try {

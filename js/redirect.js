@@ -110,7 +110,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // 显示 Loading...
         const urlDisplay = document.getElementById('url-display');
         if (urlDisplay) urlDisplay.textContent = "Redirecting to " + finalUrl;
-        window.location.replace(finalUrl);
+        
+        // 确保是安全协议才跳转 (双重保险)
+        if (target !== null) {
+            window.location.replace(finalUrl);
+        }
     } else {
         // 中间页 (intermediate)
         // 更新 UI
@@ -126,7 +130,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (redirectLink) {
-            redirectLink.href = finalUrl;
+            // 确保是安全协议才设置 href
+            if (target !== null) {
+                redirectLink.href = finalUrl;
+            } else {
+                redirectLink.removeAttribute('href');
+                redirectLink.style.pointerEvents = 'none';
+                redirectLink.style.opacity = '0.5';
+                redirectLink.textContent = "Unsafe Link";
+            }
         }
     }
 });

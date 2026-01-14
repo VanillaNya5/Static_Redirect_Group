@@ -205,7 +205,48 @@
                     // 使用后端返回的 Commit URL 或 fallback 到 Actions 列表
                     const actionsUrl = result.commit_url || `https://github.com/afoim/Static_Redirect_Group/actions`;
                     
-                    messageDiv.innerHTML = `提交成功，您的短链正在构建中，稍等大约一分钟。<br>您也可以前往 <a href="https://github.com/afoim/Static_Redirect_Group" target="_blank">构建状态页面</a> 查看构建状态，<br>之后再尝试访问： <a href="${finalUrl}" target="_blank">${finalUrl}</a>`;
+                    messageDiv.innerHTML = '';
+                    
+                    const p1 = document.createElement('p');
+                    p1.textContent = '提交成功，您的短链正在构建中，稍等大约一分钟。';
+                    
+                    const p2 = document.createElement('p');
+                    p2.appendChild(document.createTextNode('您也可以前往 '));
+                    const link1 = document.createElement('a');
+                    link1.href = "https://github.com/afoim/Static_Redirect_Group/actions";
+                    link1.target = "_blank";
+                    link1.textContent = "构建状态页面";
+                    p2.appendChild(link1);
+                    p2.appendChild(document.createTextNode(' 查看构建状态，'));
+                    
+                    const p3 = document.createElement('p');
+                    p3.appendChild(document.createTextNode('之后再尝试访问： '));
+                    const link2 = document.createElement('a');
+                    
+                    // 安全检查: 防止 javascript: 等伪协议
+                    let safeUrl = '#';
+                    try {
+                        const parsed = new URL(finalUrl);
+                        if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+                            safeUrl = finalUrl;
+                        } else {
+                            console.error("Unsafe protocol:", parsed.protocol);
+                            finalUrl = "[Unsafe URL blocked]";
+                        }
+                    } catch (e) {
+                        console.error("Invalid URL:", e);
+                        finalUrl = "[Invalid URL]";
+                    }
+
+                    link2.href = safeUrl;
+                    link2.target = "_blank";
+                    link2.textContent = finalUrl;
+                    p3.appendChild(link2);
+                    
+                    messageDiv.appendChild(p1);
+                    messageDiv.appendChild(p2);
+                    messageDiv.appendChild(p3);
+
                     messageDiv.className = 'message success';
                     document.getElementById('createForm').reset();
                 } else {
