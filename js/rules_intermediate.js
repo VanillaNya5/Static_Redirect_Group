@@ -1206,5 +1206,9 @@ window.RULES_INTERMEDIATE = {
     "/454645": {
         "url": "https://news.qq.com/rain/a/20260115A03LCJ00",
         "expired_at": "2026-01-15T06:00:00.000Z"
+    },
+    "/a1-a2": {
+        "url": "https://space.bilibili.com/374366085?spm_id_from=333.788.0.0",
+        "expired_at": "2026-01-16T08:06:00.000Z"
     }
 };
