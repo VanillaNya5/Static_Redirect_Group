@@ -1218,5 +1218,9 @@ window.RULES_INTERMEDIATE = {
     "/foggy": {
         "url": "https://b23.tv/kTlzAW0",
         "expired_at": "2026-01-22T11:35:00.000Z"
+    },
+    "/moontv": {
+        "url": "http://125.208.21.128:12008/",
+        "expired_at": "2026-01-16T00:00:00.000Z"
     }
 };
