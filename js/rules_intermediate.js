@@ -1242,5 +1242,9 @@ window.RULES_INTERMEDIATE = {
     "/myssl": {
         "url": "http://[::1]",
         "expired_at": "2026-01-17T16:18:00.000Z"
+    },
+    "/123123123": {
+        "url": "https://github.com/afoim/Static_Redirect_Group",
+        "expired_at": "2026-01-16T17:03:00.000Z"
     }
 };
