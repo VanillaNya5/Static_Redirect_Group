@@ -2158,5 +2158,9 @@ window.RULES_INTERMEDIATE = {
     "/li2313": {
         "url": "https://www.bilibili.com/",
         "expired_at": "2026-01-17T11:30:00.000Z"
+    },
+    "/xixix": {
+        "url": "https://www.bilibili.com/video/BV1q2i1BLEJT/?spm_id_from=333.1007.tianma.2-1-4.click&vd_source=7d54efc3a3465aeb045bc6d80ad12355",
+        "expired_at": "2026-01-20T11:31:00.000Z"
     }
 };
