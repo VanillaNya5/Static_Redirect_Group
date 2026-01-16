@@ -2166,5 +2166,9 @@ window.RULES_INTERMEDIATE = {
     "/b536c": {
         "url": "https://x.xx/?d=00000b536c923afc1KuKrwaisIY9dygE997H75K8dlk7O17XrXiP7fUfqf9lvrcNdAydGOg7-vHJjyZiNFQaHC9DO68W7YaUFdTJLq0s8TMZSCXN93YVZKGA_D2fUVXiluXprbHI03CkajdD-_BwpMEovcE-7Lojmtp5kjeXJ-UgwWupDQu09nbDDVewFoMYAZRj1gqUqwVk1FSU8uBXUZtaraugW_XD6GEaB8eV29isZIsgtadSYKhoB5B0Y3puJYZ4Bi9tAiGHPZJ-sI4IFWRufl9g",
         "expired_at": "2026-01-19T01:22:20.000Z"
+    },
+    "/923af": {
+        "url": "https://x.xx/?d=b536c923af36416DawBfXpF8QTKNxlvesJTNHNb_4kKt6rbvESp-fWNq4iuXsOZ7sFchsl1uV2MGqzmtHSPiV55_LWhQxIZMEgycoNY5MbIxdqGscnQ6pXD0ziPi5t9lZkbh4t7CCRrVoNCGScqb1ZGgnkQ0d62FAJLYsgswOxKATZYm9AUDBvOoAWz4-LI4xDWNpPgwwxRpX6iiN_cBL-nUZD1UU0COFodu55p0UpL0HIJLnsvyPXi8hHWMiH6KU-5OL6gqHMmbuvit3K326xVYO48f",
+        "expired_at": "2026-01-19T01:22:22.000Z"
     }
 };
