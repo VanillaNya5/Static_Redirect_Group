@@ -1994,5 +1994,9 @@ window.RULES_INTERMEDIATE = {
     "/85c96": {
         "url": "https://x.xx/?d={\"p\": \"f1a0e\", \"c\": \"AQK1UEnBTY-0vW1mqBiO0G6itI3LY_RSWTl_4KVIfiI0Sy1jyYX5YA5mTDniSbyp9JbMx-BFXBedh40joptW6Ns7EzKFVfyJzUNBMZnzJs5-sQz5BEeFtk3nURbIVsWuWgvasSxWVbvGlwwNxDKVoMUa2dy4hHYgSOEJPgWnAgD3rp9F7vRtLzMaVleMmQy5kajabmHuRQi7mrEqmQVFLXFNrHM2gkCDa5KqdB30_\", \"n\": \"6299a\", \"v\": \"85c96\"}",
         "expired_at": "2026-01-19T01:02:41.000Z"
+    },
+    "/6299a": {
+        "url": "https://x.xx/?d={\"p\": \"85c96\", \"c\": \"yYmd8TY4w4X2uVa7FllxF2kn6DdZCzk1HnRVA3wyiPoHylPZVuOyyWQBSVlccX0qSgp2wHFjEDq6ukEZoUuPmok5LYAS92eh1TxWasplMYsXxIeZYoJNdS16KP27PMTQp39HDV77Gi_AxMwAtP1gxFg2P-snJpJukxRwZVxV8BY2CMtkGvLTVT7Y6eENXdbMythY26hCLU7R0oE1GsOyJWDh8OCeyhP_4zk-P_Iv8\", \"n\": \"f51ae\", \"v\": \"6299a\"}",
+        "expired_at": "2026-01-19T01:02:43.000Z"
     }
 };
