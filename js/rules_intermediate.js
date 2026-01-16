@@ -1466,5 +1466,9 @@ window.RULES_INTERMEDIATE = {
     "/d9613": {
         "url": "https://x.xx/?d={\"p\": null, \"c\": \"c1KuKrwaisIY9dygE997H75K8dlk7O17XrXiP7fUfqf9lvrcNdAydGOg7-vHJjyZiNFQaHC9DO68W7YaUFdTJLq0s8TMZSCXN93YVZKGA_D2fUVXiluXprbHI03CkajdD-_BwpMEovcE-7Lojmtp5kjeXJ-UgwWupDQu09nbDDVewFoMYAZRj1gqUqwVk1FSU8uBXUZtaraugW_XD6GEaB8eV29isZIsgtadSYKho\", \"n\": \"bd6c7\", \"v\": \"d9613\"}",
         "expired_at": "2026-01-19T00:59:02.000Z"
+    },
+    "/bd6c7": {
+        "url": "https://x.xx/?d={\"p\": \"d9613\", \"c\": \"B5B0Y3puJYZ4Bi9tAiGHPZJ-sI4IFWRufl9gDawBfXpF8QTKNxlvesJTNHNb_4kKt6rbvESp-fWNq4iuXsOZ7sFchsl1uV2MGqzmtHSPiV55_LWhQxIZMEgycoNY5MbIxdqGscnQ6pXD0ziPi5t9lZkbh4t7CCRrVoNCGScqb1ZGgnkQ0d62FAJLYsgswOxKATZYm9AUDBvOoAWz4-LI4xDWNpPgwwxRpX6iiN_cB\", \"n\": \"21eea\", \"v\": \"bd6c7\"}",
+        "expired_at": "2026-01-19T00:59:04.000Z"
     }
 };
