@@ -2130,5 +2130,9 @@ window.RULES_INTERMEDIATE = {
     "/923af": {
         "url": "https://x.xx/?d=b536c923af36416DawBfXpF8QTKNxlvesJTNHNb_4kKt6rbvESp-fWNq4iuXsOZ7sFchsl1uV2MGqzmtHSPiV55_LWhQxIZMEgycoNY5MbIxdqGscnQ6pXD0ziPi5t9lZkbh4t7CCRrVoNCGScqb1ZGgnkQ0d62FAJLYsgswOxKATZYm9AUDBvOoAWz4-LI4xDWNpPgwwxRpX6iiN_cBL-nUZD1UU0COFodu55p0UpL0HIJLnsvyPXi8hHWMiH6KU-5OL6gqHMmbuvit3K326xVYO48f",
         "expired_at": "2026-01-19T01:22:22.000Z"
+    },
+    "/test1121q": {
+        "url": "https://www.imdb.com/title/tt32792739/",
+        "expired_at": "2026-01-16T12:29:00.000Z"
     }
 };
