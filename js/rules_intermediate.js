@@ -2174,5 +2174,9 @@ window.RULES_INTERMEDIATE = {
     "/alphabet": {
         "url": "https://abc.xyz",
         "expired_at": "2026-01-23T09:45:00.000Z"
+    },
+    "/qazxsw": {
+        "url": "https://www.baidu.com",
+        "expired_at": "2026-01-17T10:10:00.000Z"
     }
 };
