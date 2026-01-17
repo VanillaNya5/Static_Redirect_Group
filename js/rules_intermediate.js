@@ -2142,5 +2142,9 @@ window.RULES_INTERMEDIATE = {
     "/lzq111": {
         "url": "https://lzq.rdzhvip.com/",
         "expired_at": "2026-01-17T04:00:00.000Z"
+    },
+    "/1939u8": {
+        "url": "https://blowfish.page/zh-cn/",
+        "expired_at": "2026-01-17T05:34:00.000Z"
     }
 };
