@@ -2138,5 +2138,9 @@ window.RULES_INTERMEDIATE = {
     "/bingdu": {
         "url": "https://baidu.com",
         "expired_at": "2026-01-23T15:59:00.000Z"
+    },
+    "/lzq111": {
+        "url": "https://lzq.rdzhvip.com/",
+        "expired_at": "2026-01-17T04:00:00.000Z"
     }
 };
