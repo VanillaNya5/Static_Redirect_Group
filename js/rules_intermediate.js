@@ -2182,5 +2182,9 @@ window.RULES_INTERMEDIATE = {
     "/weipe": {
         "url": "https://www.weipe.vip/",
         "expired_at": "2026-01-24T00:26:00.000Z"
+    },
+    "/bingdu": {
+        "url": "https://baidu.com",
+        "expired_at": "2026-01-23T15:59:00.000Z"
     }
 };
