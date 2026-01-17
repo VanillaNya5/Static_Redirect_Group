@@ -2758,5 +2758,9 @@ window.RULES_INTERMEDIATE = {
     "/KBkJR8n": {
         "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
         "expired_at": "2026-01-21T17:00:00.000Z"
+    },
+    "/florcn": {
+        "url": "https://flor.cn",
+        "expired_at": "2026-01-21T11:25:00.000Z"
     }
 };
