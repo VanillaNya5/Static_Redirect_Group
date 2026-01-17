@@ -2162,5 +2162,9 @@ window.RULES_INTERMEDIATE = {
     "/YouTube": {
         "url": "https://www.youtube.com",
         "expired_at": "2026-01-18T05:49:00.000Z"
+    },
+    "/bingG": {
+        "url": "https://bing.com",
+        "expired_at": "2026-01-18T05:50:00.000Z"
     }
 };
