@@ -2758,5 +2758,9 @@ window.RULES_INTERMEDIATE = {
     "/gongce": {
         "url": "https://noiwcdoge.github.io",
         "expired_at": "2026-01-19T16:00:00.000Z"
+    },
+    "/class": {
+        "url": "https://hydro.ac/d/A1086/",
+        "expired_at": "2026-01-24T16:00:00.000Z"
     }
 };
