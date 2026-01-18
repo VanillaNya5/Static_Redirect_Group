@@ -2770,5 +2770,9 @@ window.RULES_INTERMEDIATE = {
     "/imail": {
         "url": "https://mail.heiye.xin/",
         "expired_at": "2026-01-20T10:58:00.000Z"
+    },
+    "/stemw": {
+        "url": "https://s.tem",
+        "expired_at": "2026-01-23T11:19:00.000Z"
     }
 };
