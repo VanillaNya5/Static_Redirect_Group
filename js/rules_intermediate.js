@@ -1882,5 +1882,9 @@ window.RULES_INTERMEDIATE = {
     "/potpot123": {
         "url": "https://fuwari-251.pages.dev/",
         "expired_at": "2026-01-27T12:08:00.000Z"
+    },
+    "/lovey": {
+        "url": "https://upos-sz-estgcos.bilivideo.com/upgcxcode/04/24/1641702404/1641702404-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&platform=html5&mid=0&uipk=5&trid=9770ee345c264ab0bf84ffe6cc887b4h&oi=665020188&deadline=1768918294&nbs=1&gen=playurlv3&o",
+        "expired_at": "2026-01-25T12:14:00.000Z"
     }
 };
