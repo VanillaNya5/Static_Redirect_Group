@@ -7386,5 +7386,9 @@ window.RULES_INTERMEDIATE = {
     "/sbsb1453": {
         "url": "https://www.un.org/sustainabledevelopment/zh/cities/",
         "expired_at": "2026-01-27T15:30:00.000Z"
+    },
+    "/sparks": {
+        "url": "https://blog.acofork.com/posts/shorter-url/",
+        "expired_at": "2026-01-23T16:33:00.000Z"
     }
 };
