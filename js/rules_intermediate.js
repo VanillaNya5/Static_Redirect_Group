@@ -7382,5 +7382,9 @@ window.RULES_INTERMEDIATE = {
     "/panx1": {
         "url": "https://paxn.fun/",
         "expired_at": "2026-01-23T09:05:00.000Z"
+    },
+    "/sbsb1453": {
+        "url": "https://www.un.org/sustainabledevelopment/zh/cities/",
+        "expired_at": "2026-01-27T15:30:00.000Z"
     }
 };
