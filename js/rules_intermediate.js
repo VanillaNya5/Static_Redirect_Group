@@ -7370,5 +7370,9 @@ window.RULES_INTERMEDIATE = {
     "/lc112": {
         "url": "https://www.bilibili.com/video/BV1vxrnBnEru/?spm_id_from=333.1007.tianma.1-3-3.click",
         "expired_at": "2026-01-23T06:00:00.000Z"
+    },
+    "/qrrrw": {
+        "url": "https://a.com",
+        "expired_at": "2026-01-26T05:20:00.000Z"
     }
 };
