@@ -7954,5 +7954,9 @@ window.RULES_INTERMEDIATE = {
     "/69919afa1e": {
         "url": "https://www.bilibili.com/video/av67",
         "expired_at": "2026-01-30T05:21:01.000Z"
+    },
+    "/152b5ad47d": {
+        "url": "https://www.bilibili.com/video/av68",
+        "expired_at": "2026-01-30T05:21:04.000Z"
     }
 };
