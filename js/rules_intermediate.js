@@ -8934,5 +8934,9 @@ window.RULES_INTERMEDIATE = {
     "/Acofok": {
         "url": "https://q",
         "expired_at": "2026-01-31T15:02:00.000Z"
+    },
+    "/YBshop": {
+        "url": "https://kwpro.cn/shop/YBditie",
+        "expired_at": "2026-01-30T01:25:00.000Z"
     }
 };
