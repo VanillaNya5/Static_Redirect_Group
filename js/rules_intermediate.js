@@ -8934,5 +8934,9 @@ window.RULES_INTERMEDIATE = {
     "/test1": {
         "url": "https://baidu.com",
         "expired_at": "2026-01-30T11:00:00.000Z"
+    },
+    "/yuanshen11": {
+        "url": " https://www.bilibili.com/video/BV1d9rxBiEzi/",
+        "expired_at": "2026-01-28T12:53:00.000Z"
     }
 };
