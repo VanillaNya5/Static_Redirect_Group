@@ -8914,5 +8914,9 @@ window.RULES_INTERMEDIATE = {
     "/bilibiliff": {
         "url": "https://www.bilibili.com/",
         "expired_at": "2026-01-30T06:37:00.000Z"
+    },
+    "/doodoo": {
+        "url": "https://www.bilibili.com/video/BV1vQqHBmEz1?spm_id_from=333.788.recommend_more_video.0&trackid=web_related_0.router-related-2206146-vhnjg.1769495814664.973&vd_source=57d53200b112f4716a93ce598c61f3e3",
+        "expired_at": "2026-01-29T17:01:00.000Z"
     }
 };
