@@ -8906,5 +8906,9 @@ window.RULES_INTERMEDIATE = {
     "/baibai": {
         "url": "https://bing.com",
         "expired_at": "2026-01-31T18:58:00.000Z"
+    },
+    "/ASADA": {
+        "url": "https://live.bilibili.com/30931147",
+        "expired_at": "2026-01-28T05:04:00.000Z"
     }
 };
