@@ -3266,5 +3266,9 @@ window.RULES_INTERMEDIATE = {
     "/ccqxd": {
         "url": "https://free.kike.cc/QxD",
         "expired_at": "2026-01-30T08:06:00.000Z"
+    },
+    "/klxss": {
+        "url": "https://120524.xyz/",
+        "expired_at": "2026-02-04T11:30:00.000Z"
     }
 };
