@@ -3278,5 +3278,9 @@ window.RULES_INTERMEDIATE = {
     "/example": {
         "url": "https://example.com",
         "expired_at": "2026-01-29T14:52:00.000Z"
+    },
+    "/sora2": {
+        "url": "https://my.feishu.cn/wiki/EwoNwhDHviwL54kZ5zscmxulnbb",
+        "expired_at": "2026-02-03T14:53:00.000Z"
     }
 };
