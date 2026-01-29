@@ -2466,5 +2466,9 @@ window.RULES_INTERMEDIATE = {
     "/coloryi": {
         "url": "https://coloryi.dpdns.org/",
         "expired_at": "2026-02-01T15:59:00.000Z"
+    },
+    "/__url": {
+        "url": "https://example.com",
+        "expired_at": "2026-02-04T16:00:00.000Z"
     }
 };
