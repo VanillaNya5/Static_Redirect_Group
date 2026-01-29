@@ -2486,5 +2486,9 @@ window.RULES_INTERMEDIATE = {
     "/nyhhnn": {
         "url": "https://baidu.com/:alert(1)//",
         "expired_at": "2026-01-29T07:28:00.000Z"
+    },
+    "/nyhhnnyhjy": {
+        "url": "https://baidu.com/javascript:alert(1)//",
+        "expired_at": "2026-01-29T07:29:00.000Z"
     }
 };
