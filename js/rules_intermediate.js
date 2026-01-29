@@ -2498,5 +2498,9 @@ window.RULES_INTERMEDIATE = {
     "/woshishabi": {
         "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiiIIiiIiiIIIIiiiiiIiIIIiiIIiIIIiiIIIIiIiiiIiIIIIiIIIiIIIiIIiIIIIiIII",
         "expired_at": "2026-02-04T07:46:00.000Z"
+    },
+    "/gugugaga": {
+        "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiIIiiIIIiIIIiIiIiIIiiIIIiIIIiIiIiIIiiIIIiIIiiiiIiIIiiIIIiIIiiiiIiiIi",
+        "expired_at": "2026-02-04T07:48:00.000Z"
     }
 };
